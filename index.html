@@ -1,95 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-table , th, tf {
-boarder: 1px solid black;
-}
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Dev </title>
+    <title>Web Dev</title>
 
+    <style>
+        .para {
+            color: red;
+            font-size: 10px;
+            font-weight: bold;
+        }
+
+        .text-underline {
+            text-decoration: underline;
+        }
+
+        .classwork {
+            font-size: 48px;
+            font-weight: bold;
+        }
+        .red {
+            color: red;
+        }
+        .blue {
+            color: blue;
+        }
+        .green {
+            color: green;
+        }
+
+        .wrapper p{
+            color:red;
+        }
+
+        p{
+            color:green;
+        }
+
+        
+        .text-red{
+            color:red;
+        }
+
+        .container{
+            font-size: 50px;
+        }
+
+        .wrap.container .text-red {
+            font-weight: bold;
+        }
+
+        .container .text-red{
+            font-size: 50px;
+        }
+
+    </style>
 </head>
 
 <body>
-    <h1 style="color: blue;"> Web Dev CLass </h1>
-    <h2>This is web dev class I</h2>
-    <h3>This is web dev class II</h3>
-    <h4>This is web dev class III</h4>
-    <h5>This is web dev class IV</h5>
-    <h6>This is web dev class V</h6>
+
+    <!-- Headings -->
+    <h1 style="color: blue;">Web Dev Class</h1>
+    <h2>This is Web Dev Class I</h2>
+    <h3>This is Web Dev Class II</h3>
+    <h4>This is Web Dev Class III</h4>
+    <h5>This is Web Dev Class IV</h5>
+    <h6>This is Web Dev Class V</h6>
 
     <br>
     <hr>
 
-    <img src="./images/images.jpg" alt="ram " height="500" width=" 500 ">
-    <br>s
-    <img src="images/dead souls.png" alt="" height=" 500" width=" 500">
-    <br>
-    <img src="images/Gta.jpg" alt="" height=" 500 " width=" 500">
-    <br>
-    <p> You have reached end of the web site </p>
-    <a style="color: aqua;" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1"
-        target="_blank">
-        Don't click it
-        <img src="images/youtube.jpg" alt="">
-    </a>
-    <p> Ram </p>
-    <p> Shyam</p>
-    <span> Gita </span>
-    <span> sita</span>
+    <!-- Images -->
+    <img src="./images/images.jpg" alt="Ram" height="500" width="500">
+    <br><br>
 
-    <ol> <!-- ordered list  yesma order 1 , 2 ma aauxa-->
-        <li> Arjun</li>
-        <li> Bhim</li>
+    <img src="images/dead souls.png" alt="Dead Souls" height="500" width="500">
+    <br><br>
+
+    <img src="images/Gta.jpg" alt="GTA" height="500" width="500">
+
+    <br><br>
+
+    <p>You have reached the end of the website.</p>
+
+    <hr>
+
+    <!-- Link -->
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        target="_blank"
+        style="color: aqua;">
+        Don't Click It
+        <br>
+        <img src="images/youtube.jpg" alt="YouTube">
+    </a>
+
+    <hr>
+
+    <!-- Paragraphs and Span -->
+    <p>Ram</p>
+    <p>Shyam</p>
+
+    <span>Gita</span>
+    <span>Sita</span>
+
+    <hr>
+
+    <!-- Ordered List -->
+    <ol>
+        <li>Arjun</li>
+        <li>Bhim</li>
     </ol>
 
-    <ul> <!-- unordered list yesma . . ma aauxa -->
-        <li> Karan</li>
-        <li> Yudistir</li>
+    <!-- Unordered List -->
+    <ul>
+        <li>Karan</li>
+        <li>Yudhishthir</li>
     </ul>
 
-    <!-- week 2 class 3 june 29 -- end of week 2 class  -->
+    <hr>
+
+    <!-- Table -->
     <section>
         <div>
-            <table border="1px"> <!--table learnng -->
-
-
+            <table border="1" cellpadding="10">
                 <tr>
-                    <th> S.No.</th>
-                    <th> class </th>
-                    <th> roll no</th>
+                    <th>S.No.</th>
+                    <th>Class</th>
+                    <th>Roll No.</th>
                 </tr>
 
                 <tr>
-                    <th> 1 </th>s
-                    <th> ten </th>
-                    <th> 16
+                    <td>1</td>
+                    <td>Ten</td>
+                    <td>16</td>
                 </tr>
-                <td colspan=""> ram border</td>
+
+                <tr>
+                    <td colspan="3">Ram Border</td>
                 </tr>
             </table>
         </div>
     </section>
 
+    <hr>
 
+    <!-- Strong and Em Tags -->
     <section>
-        <div> <!-- <strong le bold garxa text lai 
- eg: I love <stong> momo </strong> yesma momo is bold 
-    <em> </em> yo tag le italic garxa text lai 
-    eg: <em> Momo</em>Momo yesma momo is italic  -->
-
-            <p> My name is <strong> Prashant Puri </strong>. I love <em> Momo</em>Momo.
-                <a href="https://youtube.com">Click here </a> urlfor youtube
+        <div>
+            <p>
+                My name is <strong>Prashant Puri</strong>.
+                I love <em>Momo</em>.
             </p>
+
+            <a href="https://youtube.com" target="_blank">
+                Click Here
+            </a>
         </div>
     </section>
 
-<!-- garne  commit push merge 
- git add 
- git commit -m ""
- git push origin branch name 
- --> 
+    <hr>
+
+    <!-- Week 3 CSS Example -->
+    <section>
+
+        <p class="para text-underline">
+            <strong>Ram</strong> is Sita's husband.
+        </p>
+
+        <p style="color: green; font-size: 10px; font-weight: bold;">
+            Sita is the daughter of King Janak.
+        </p>
+
+        <p style="color: goldenrod; font-size: 10px; font-weight: bold;">
+            Ravana is the king of Lanka.
+        </p>
+
+    </section>
+
+    <hr>
+
+    <!-- Week 3 Classwork -->
+    <section>
+
+        <p class="classwork red" ">
+            Roses are red
+        </p>
+
+        <p class="classwork blue" >
+            O my darling
+        </p>
+        
+        <p class="classwork green" >
+            Violets are blue
+        </p>
+
+        <p class="classwork green" >
+            I love you
+        </p>
+
+    </section>
+
+    <section>   
+
+        <div class = "wrapper">
+
+            <p>
+                Rest in peace Nimsdai
+            </p>
+
+        </div>
+
+            <p>
+                Mountaineering is krazzy.
+            </p>
+
+            <div class = "wrap container">
+
+                <p class = "text-red">
+                    Rato color ko text
+                </p>
+
+            </div>
+
+            <div class = "wrap">
+
+                <p class = "text-red">
+                    rato color ko dasro text
+                </p>
+
+            </div>
+
+            <div class = "container">   
+                
+                <p class = "text-red">
+                container
+                </p>
+
+            </div>
+
+
+
+
+    </section>
+
 </body>
 
 </html>
