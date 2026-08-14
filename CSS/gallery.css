@@ -1,0 +1,18 @@
+.title {
+    text-align: center;
+    color: purple;
+}
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    width: 900px;
+    margin: 20px auto;
+}
+
+.gallery-container img {
+    width: 210px;
+    height: 200px;
+    object-fit: cover;
+}
