@@ -1,13 +1,37 @@
 body {
-    margin: 100px;
+    margin: 0;
+
+    min-height: 100vh;
+
+    border: 2px solid aqua;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.box {
-    border: 2px solid blueviolet;
-    height: 300px;
-    width: 300px;
-    margin: auto;
 
+
+.wrapper {
+    width: 500px;
+    height: 500px;
+
+    border: 2px solid black;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.box {
+    width: 300px;
+    height: 300px;
+
+    border: 2px solid blueviolet;
     box-sizing: border-box;
 
     background-image: url("../images/Gta.jpg");
@@ -15,16 +39,40 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 
-    transform: translate(50%, 50%);
-
-    transition: background-color 0.5s 0.2s ease,
-                transform 1s 0.2s ease;
+    transition:
+        transform 1s 0.2s ease;
 }
 
-.box:hover {
-    background-color: green;
 
-    transform: translate(50%, 50%) scale(1.2) rotate(15deg);
+
+.box:hover {
+    transform: scale(1.2) rotate(15deg);
 
     cursor: pointer;
+}
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    body {
+        min-height: 100vh;
+        border: 2px solid aqua;
+    }
+
+    .wrapper {
+        width: 90%;
+        height: 80vh;
+
+        border: 2px solid black;
+    }
+
+    .box {
+        width: 250px;
+        height: 250px;
+    }
+
+    .box:hover {
+        transform: scale(1.05) rotate(5deg);
+    }
 }
