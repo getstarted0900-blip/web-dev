@@ -1,0 +1,30 @@
+body {
+    margin: 100px;
+}
+
+.box {
+    border: 2px solid blueviolet;
+    height: 300px;
+    width: 300px;
+    margin: auto;
+
+    box-sizing: border-box;
+
+    background-image: url("../images/Gta.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transform: translate(50%, 50%);
+
+    transition: background-color 0.5s 0.2s ease,
+                transform 1s 0.2s ease;
+}
+
+.box:hover {
+    background-color: green;
+
+    transform: translate(50%, 50%) scale(1.2) rotate(15deg);
+
+    cursor: pointer;
+}
