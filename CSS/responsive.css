@@ -1,0 +1,14 @@
+body {
+    font-size: 16px;
+    background-color: none;
+}
+
+p {
+    color: white;
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 30px;
+    }
+}
